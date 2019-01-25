@@ -8,9 +8,9 @@ module "your_asg" {
   source        = "youngookkim/gcp/asg"
   version       = "v1.0.0"
 
-  name          = "sg-mk1"
+  name          = "yourasg"
   stack         = "dev"
-  detail        = "test"
+  detail        = "mk1"
   region        = "us-central1"
   project       = "bxb-plm-poc"
   network       = "${module.vpc.id}"
