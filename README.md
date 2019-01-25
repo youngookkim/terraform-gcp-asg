@@ -5,11 +5,12 @@ You can use this module like as below example.
 
 ```
 module "your_asg" {
-  source  = "youngookkim/gcp/asg"
+  source        = "youngookkim/gcp/asg"
   version       = "v1.0.0"
 
-  module_name   = "sg-mk1"
-  stack_name    = "usc1"
+  name          = "sg-mk1"
+  stack         = "dev"
+  detail        = "test"
   region        = "us-central1"
   project       = "bxb-plm-poc"
   network       = "${module.vpc.id}"
